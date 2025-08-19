@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D Clicker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to bottom, #cc00ff, #220022, #000000);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
+      font-weight: 600;
+      color: black;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    p.subtitle {
+      margin: 5px 0 40px 0;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #ddd;
+      text-align: center;
+    }
+
+    .download-btn {
+      margin-bottom: 20px;
+      padding: 20px 60px;
+      font-size: 2em;
+      font-weight: bold;
+      color: black;
+      background: limegreen;
+      border: 3px solid black;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 15px black;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+      text-decoration: none;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00ff00; }
+      50% { box-shadow: 0 0 30px #00ff00; }
+      100% { box-shadow: 0 0 10px #00ff00; }
+    }
+
+    .download-btn:hover {
+      background: #00ff00;
+      transform: scale(1.1);
+    }
+
+    /* Social Links */
+    .socials {
+      margin-top: 10px;
+      display: flex;
+      gap: 30px;
+    }
+
+    .socials a {
+      font-size: 2.5em;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+    }
+
+    .socials a.tiktok:hover { color: #ff0050; }
+    .socials a.youtube:hover { color: #ff0000; }
+    .socials a.discord:hover { color: #7289da; }
+
+    /* By Text */
+    .by-text {
+      margin-top: 15px;
+      font-size: 1em;
+      font-weight: 400;
+      color: #bbb;
+    }
+
+    footer {
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to D Clicker</h1>
+  <p class="subtitle">Fast • Simple • Free Autoclicker</p>
+
+  <a href="DClicker.exe" class="download-btn" download>Download</a>
+
+  <!-- Social Media Links -->
+  <div class="socials">
+    <a href="https://www.tiktok.com/@monkeylagoofy" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/@DClicker" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+    <a href="https://discord.gg/cqtD82te96" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+  </div>
+
+  <div class="by-text">By SNKgames</div>
+
+  <footer>Made with ❤️ for gamers</footer>
+
+</body>
+</html>
